@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <style type="text/css">
+        .icon-canvas-transparent {
+            fill: none;
+        }
+        .icon-wheel {
+            fill: none;
+            stroke: #000000;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    </style>
+    <rect class="icon-canvas-transparent" width="16" height="16"/>
+    
+    <!-- Outer Circle -->
+    <circle class="icon-wheel" cx="8" cy="8" r="6"/>
+    
+    <!-- Inner Circle -->
+    <circle class="icon-wheel" cx="8" cy="8" r="2"/>
+    
+    <!-- Spokes -->
+    <line class="icon-wheel" x1="8" y1="2" x2="8" y2="6"/>
+    <line class="icon-wheel" x1="8" y1="10" x2="8" y2="14"/>
+    <line class="icon-wheel" x1="2" y1="8" x2="6" y2="8"/>
+    <line class="icon-wheel" x1="10" y1="8" x2="14" y2="8"/>
+    <line class="icon-wheel" x1="3.5" y1="3.5" x2="6" y2="6"/>
+    <line class="icon-wheel" x1="10" y1="10" x2="12.5" y2="12.5"/>
+    <line class="icon-wheel" x1="12.5" y1="3.5" x2="10" y2="6"/>
+    <line class="icon-wheel" x1="6" y1="10" x2="3.5" y2="12.5"/>
+</svg>

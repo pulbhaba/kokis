@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <style type="text/css">
+        .icon-canvas-transparent {
+            fill: none;
+        }
+        .icon-vs-out {
+            fill: #F6F6F6;
+        }
+        .icon-vs-bg {
+            fill: #424242;
+        }
+    </style>
+    <rect class="icon-canvas-transparent" width="16" height="16"/>
+    <path class="icon-vs-bg" d="M7 2v5H2v2h5v5h2v-5h5V7h-5V2H7z"/>
+</svg>

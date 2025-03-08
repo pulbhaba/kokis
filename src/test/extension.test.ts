@@ -20,7 +20,7 @@ describe('RestApiRunner Extension', () => {
 	});
 
 	it('should create a webview panel for API requests', () => {
-		const request = { url: 'https://jsonplaceholder.typicode.com/todos/1', method: 'GET' };
+		const request = { url: 'https://jsonplaceholder.typicode.com/todos/1', method: 'GET', headers: [], body: "" };
 		const panel = RestApiPanel.createOrShow(vscode.Uri.parse(''), request);
 		assert.ok(panel);
 	});

@@ -1,6 +1,7 @@
 {
   "name": "kokis",
-  "displayName": "kokis",
+  "displayName": "Kokis Rest Client",
+  "publisher": "pulbhaba",
   "description": "This is a simple lightweight API client for Visual Studio Code",
   "version": "0.0.1",
   "engines": {
@@ -12,28 +13,43 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "kokis-explorer",
+          "title": "Kokis",
+          "icon": "media/dark/dep.svg"
+        }
+      ]
+    },
     "commands": [
       {
-        "command": "restApiRunner.addRequest",
-        "title": "Add API Request"
+        "command": "kokis.addRequest",
+        "title": "Kokis: Add API Request",
+        "icon": {
+          "light": "media/light/add.svg",
+          "dark": "media/dark/add.svg"
+        }
       },
       {
-        "command": "restApiRunner.runRequest",
-        "title": "Run API Request"
+        "command": "kokis.runRequest",
+        "title": "Kokis: Run API Request"
       }
     ],
     "views": {
-      "explorer": [
+      "kokis-explorer": [
         {
-          "id": "restApiExplorer",
-          "name": "Rest API Explorer"
+          "id": "kokisExplorer",
+          "name": "Rest API Explorer",
+          "icon": "media/dark/dep.svg",
+          "contextualTitle": "Kokis Rest API"
         }
       ]
     }
   },
   "icons": {
-    "light": "./images/icon-light.svg",
-    "dark": "./images/icon-dark.svg"
+    "light": "media/light/add.svg",
+    "dark": "media/dark/add.svg"
   },
   "repository": {
     "url": "none"
@@ -58,16 +74,20 @@
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
     "@types/vscode": "^1.98.0",
+    "@types/yargs": "^17.0.33",
     "@typescript-eslint/eslint-plugin": "^8.25.0",
     "@typescript-eslint/parser": "^8.25.0",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1",
     "esbuild": "^0.25.0",
     "eslint": "^9.21.0",
+    "mocha": "^11.1.0",
     "npm-run-all": "^4.1.5",
-    "typescript": "^5.7.3"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   },
   "dependencies": {
-    "vsce": "^2.15.0"
+    "vsce": "^2.15.0",
+    "yargs": "^17.7.2"
   }
 }
