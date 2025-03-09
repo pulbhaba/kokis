@@ -35,11 +35,11 @@ export class RestApiPanel {
   private static getWebviewContent(webview: vscode.Webview, request: { url: string, method: string, headers: string[], body: string }): string {
 
     const jsFile = webview.asWebviewUri(
-      vscode.Uri.joinPath(RestApiPanel._extensionUri, "dist", "webview", "assets", "index.js")
+      vscode.Uri.joinPath(RestApiPanel._extensionUri, "dist", "webview", "index.js")
     );
 
     const cssFile = webview.asWebviewUri(
-      vscode.Uri.joinPath(RestApiPanel._extensionUri, "dist", "webview", "assets", "index.css")
+      vscode.Uri.joinPath(RestApiPanel._extensionUri, "dist", "webview", "index.css")
     );
 
     return `<!DOCTYPE html>
