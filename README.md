@@ -1,7 +1,9 @@
 # Rest API Runner Extension
 
 ## Overview
-The **Rest API Runner** extension for Visual Studio Code allows users to run REST API requests directly from VS Code. It provides a simple way to manage and group API requests in collections.
+The **Rest API Runner** is a Visual Studio Code extension designed to streamline REST API testing directly within your workspace. With an intuitive sidebar interface, it enables developers to efficiently manage, group, and execute their API requests without having to leave the editor. The extension facilitates rapid API testing by allowing you to save frequent requests into organized collections, execute them instantly, and conveniently view responses in an embedded webview panel.
+
+This tool is ideal for developers looking for a quick, integrated way to interact with APIs during development, debugging, and collaboration.
 
 ## Features
 - Add API requests to a collection
