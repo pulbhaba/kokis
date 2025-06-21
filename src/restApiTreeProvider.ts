@@ -37,7 +37,14 @@ export class RestApiTreeProvider implements vscode.TreeDataProvider<ApiRequestTr
   readonly onDidChangeTreeData: vscode.Event<void> = this._onDidChangeTreeData.event;
   private requests: { label: string, url: string, method: string, headers: string[], body: string }[] = [];
 
-  constructor(private context: vscode.ExtensionContext) { }
+  constructor(private context: vscode.ExtensionContext) {
+    // Load requests from globalState
+    const storedRequests = this.context.globalState.get<{
+      label: string, url: string, method: string, headers: string[], body: string
+    }[]>('requests', []);
+    this.requests = storedRequests;
+  }
+
 
   getTreeItem(element: ApiRequestTreeItem): vscode.TreeItem {
     return element;
@@ -86,6 +93,7 @@ export class RestApiTreeProvider implements vscode.TreeDataProvider<ApiRequestTr
 
       if (url) {
         this.requests.push({ label: url, url, method, headers, body });
+        this.context.globalState.update('requests', this.requests);
         this._onDidChangeTreeData.fire();
       } else {
         throw new Error('Invalid curl command. Could not extract URL.');
