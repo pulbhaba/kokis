@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/pulbhaba/kokis/compare/v1.0.0...v1.1.0) (2025-06-21)
+
+
+### Features
+
+* storing global state. ([cde1510](https://github.com/pulbhaba/kokis/commit/cde1510a53c8ac75c8e644e8adc7a94d0a410445))
+
 # 1.0.0 (2025-03-09)
 
 
